@@ -65,9 +65,9 @@ def binary_image( image_path, subscription_key ):
 
 
 
-def search_url_with_filter( image_path, subscription_key, image_url ):
+def search_url_with_filter( image_path, subscription_key, image_url, site = "www.bing.com" ):
 
-    filters = Filters( site="www.bing.com" )
+    filters = Filters( site = site )
 
     knowledge_request = VisualSearchRequest(
         image_info = ImageInfo( url = image_url ),

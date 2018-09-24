@@ -35,4 +35,5 @@ def rendering_images_grid(m, n, images_data):
                 data.raise_for_status()
                 image = Image.open( BytesIO( data.content ) )
                 axes[i][j].imshow( image )
-                axes[i][j].axis( "off" )               
+                axes[i][j].axis( "off" )
+    print("\n")
